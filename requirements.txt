@@ -26,4 +26,5 @@ stravalib==0.10.2
 tzlocal==2.1
 units==0.7
 urllib3==1.25.9
-gunicorn-20.0.4
+gunicorn==20.0.4
+whitenoise==5.1.0
