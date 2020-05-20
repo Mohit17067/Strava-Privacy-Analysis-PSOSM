@@ -1,0 +1,21 @@
+{% extends "strava/base.html" %}
+{% block content %}
+<br>
+<br>
+
+<h1>Analysis about Athelete {{id}}</h1>
+<div class="d-flex justify-content-between">
+	<div class="p-1">
+		<a class="btn btn-outline-primary mr-1" href="{% url 'start_end' id %}">Start & End Points</a>
+	</div>
+	<div class="p-1">
+		<a class="btn btn-outline-primary mr-1" href="{% url 'frequent_spots' id %}">Frequent Spots</a>
+	</div>
+	<div class="p-1">
+		<a class="btn btn-outline-primary mr-1" href="{% url 'rest_spots' id %}">Rest Spots</a>
+	</div>
+	<div class="p-1">
+		<a class="btn btn-outline-primary mr-1" href="#">Multiple Users Overlap</a>
+	</div>
+</div>
+{% endblock content %} 
