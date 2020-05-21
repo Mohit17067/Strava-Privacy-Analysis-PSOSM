@@ -9,7 +9,7 @@ MY_STRAVA_CLIENT_SECRET = '7224bbf5323a86ee18e2fafb5fe084d52991474c'
 
 # Create your views here.
 def home(request):
-	return render(request, 'strava/athlete_info.html', {'id':1})
+	return render(request, 'strava/athlete_info.html', {'file_name':'strava/heatmap_data/Athelete_'+str(1)+'.html', 'id':1})
 
 def stravaAuthentication(request):
 	print('check')
@@ -24,7 +24,7 @@ def sampleData(request):
 	return HttpResponse("In sample data ")
 
 def athlete_info(request, ath_id):
-	return render(request, 'strava/athlete_info.html', {'id':ath_id})
+	return render(request, 'strava/athlete_info.html', {'file_name':'strava/heatmap_data/Athelete_'+str(ath_id)+'.html', 'id':ath_id})
 
 def start_end(request, ath_id):
 	return render(request, 'strava/start_end.html', {'file_name':"strava/startEndData/Athelete_" + str(ath_id) + ".html", 'id':ath_id})
