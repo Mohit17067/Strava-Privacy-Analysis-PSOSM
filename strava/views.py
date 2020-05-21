@@ -9,7 +9,7 @@ MY_STRAVA_CLIENT_SECRET = '7224bbf5323a86ee18e2fafb5fe084d52991474c'
 
 # Create your views here.
 def home(request):
-	return render(request, 'strava/home.html')
+	return render(request, 'strava/athlete_info.html', {'id':1})
 
 def stravaAuthentication(request):
 	print('check')
@@ -34,3 +34,6 @@ def rest_spots(request,ath_id):
 
 def frequent_spots(request, ath_id):
 	return render(request, 'strava/frequent_spots.html', {'file_name':"strava/FrequentSpotsData/athlete "+str(ath_id)+"frequency_and_time_plots_.html",'id':ath_id})
+
+def avg_speed(request, ath_id):
+	return render(request, 'strava/avg_speed.html', {'file_name':"strava/AvgSpeed/athlete"+str(ath_id)+"_graph.html",'id':ath_id})

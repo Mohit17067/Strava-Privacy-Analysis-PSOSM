@@ -11,4 +11,5 @@ urlpatterns = [
     path('athlete/<int:ath_id>/start_end', views.start_end, name='start_end'),
     path('athlete/<int:ath_id>/rest_spots', views.rest_spots, name='rest_spots'),
     path('athlete/<int:ath_id>/frequent_spots', views.frequent_spots, name='frequent_spots'),
+    path('athlete/<int:ath_id>/avg_speed', views.avg_speed, name='avg_speed'),
 ]

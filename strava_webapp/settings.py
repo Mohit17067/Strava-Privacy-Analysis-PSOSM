@@ -25,7 +25,7 @@ SECRET_KEY = '962x6u%s7_m*f%q_c9u1bgi!dua$c%d9ka$e7$ep6(*ruufi*5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS =  ['localhost', '127.0.0.1', '[::1]', 'strava-privacy-analysis-psosm.herokuapp.com']
+ALLOWED_HOSTS =  ['localhost', '127.0.0.1', '[::1]', 'strava-privacy-analysis-psosm.herokuapp.com', '0.0.0.0']
 
 
 # Application definition
