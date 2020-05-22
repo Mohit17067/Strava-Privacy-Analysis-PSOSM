@@ -38,7 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'easy_maps',
 ]
+
+
+EASY_MAPS_GOOGLE_KEY = 'AIzaSyATg_isuGSCHIlJamrxAXfkFDTYhIz7ytM'
+EASY_MAPS_CENTER = (-41.3, 32)
 
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',

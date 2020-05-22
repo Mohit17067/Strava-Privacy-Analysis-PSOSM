@@ -24,9 +24,14 @@ def sampleData(request):
 	return HttpResponse("In sample data ")
 
 def athlete_info(request, ath_id):
-	return render(request, 'strava/athlete_info.html', {'file_name':'strava/heatmap_data/Athelete_'+str(ath_id)+'.html', 'id':ath_id})
+	import pickle
+	with open("strava/home_address/athlete_"+str(ath_id),'rb') as f:
+		address = pickle.load(f)
+		print(address)
+	return render(request, 'strava/athlete_info.html', {'file_name':'strava/heatmap_data/Athelete_'+str(ath_id)+'.html', 'id':ath_id,'address':address})
 
 def start_end(request, ath_id):
+
 	return render(request, 'strava/start_end.html', {'file_name':"strava/startEndData/Athelete_" + str(ath_id) + ".html", 'id':ath_id})
 
 def rest_spots(request,ath_id):

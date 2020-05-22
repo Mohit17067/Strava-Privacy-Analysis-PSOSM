@@ -21,4 +21,8 @@
 <br><br>
 <h2>Heatmap of Routes Taken By Athlete</h2>
 {% include file_name %}
+<h2>Home Location of the Athlete</h2>
+{% load easy_maps_tags %}
+{% easy_map address 1200 400 %}
 {% endblock content %} 
+
