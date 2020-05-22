@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Strava Privacy Analisis</title>
+  <title>Strava Privacy Analysis</title>
 
   <!-- Bootstrap core CSS -->
   <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -30,6 +30,8 @@
 
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
+      <a href="{% url 'athelete_overlap'%}" class="list-group-item list-group-item-action bg-light font-weight-bold">Multiple Athletes</a>
+      <br>
       <div class="sidebar-heading">All Athletes </div>
       <div class="list-group list-group-flush">
         <a href="{% url 'athlete_info' 1 %}" class="list-group-item list-group-item-action bg-light">Athlete 1</a>
@@ -78,9 +80,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="{% url 'home-view'%}">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
             </li>
             <li class="nav-item dropdown">
@@ -93,7 +95,7 @@
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
-            </li>
+            </li> -->
           </ul>
         </div>
       </nav>

@@ -3,7 +3,7 @@
 <br>
 <br>
 
-<h1>Analysis about Athelete {{id}}</h1>
+<h1>Analysis about Athlete {{id}}</h1>
 <div class="d-flex justify-content-between">
 	<div class="p-1">
 		<a class="btn btn-outline-primary mr-1" href="{% url 'start_end' id %}">Start & End Points</a>
@@ -17,11 +17,8 @@
 	<div class="p-1">
 		<a class="btn btn-outline-primary mr-1" href="{% url 'avg_speed' id %}">Average Speeds</a>
 	</div>
-	<div class="p-1">
-		<a class="btn btn-outline-primary mr-1" href="#">Multiple Users Overlap</a>
-	</div>
 </div>
 <br><br>
-<h2>Heatmap of Routes Taken By Athelete</h2>
+<h2>Heatmap of Routes Taken By Athlete</h2>
 {% include file_name %}
 {% endblock content %} 

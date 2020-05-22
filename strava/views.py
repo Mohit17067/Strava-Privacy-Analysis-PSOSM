@@ -37,3 +37,6 @@ def frequent_spots(request, ath_id):
 
 def avg_speed(request, ath_id):
 	return render(request, 'strava/avg_speed.html', {'file_name':"strava/AvgSpeed/athlete"+str(ath_id)+"_graph.html",'id':ath_id})
+
+def athelete_overlap(request):
+	return render(request, 'strava/multiple_atheletes.html', {'file_name':'strava/athelete_overlap.html'})
