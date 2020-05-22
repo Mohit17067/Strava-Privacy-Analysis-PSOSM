@@ -9,7 +9,11 @@ MY_STRAVA_CLIENT_SECRET = '7224bbf5323a86ee18e2fafb5fe084d52991474c'
 
 # Create your views here.
 def home(request):
-	return render(request, 'strava/athlete_info.html', {'file_name':'strava/heatmap_data/Athelete_'+str(1)+'.html', 'id':1})
+	import pickle
+	with open("strava/home_address/athlete_"+str(1),'rb') as f:
+		address = pickle.load(f)
+		print(address)
+	return render(request, 'strava/athlete_info.html', {'file_name':'strava/heatmap_data/Athelete_'+str(1)+'.html', 'id':1, 'address':address})
 
 def stravaAuthentication(request):
 	print('check')

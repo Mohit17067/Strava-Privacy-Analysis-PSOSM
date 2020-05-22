@@ -4,6 +4,12 @@ certifi==2020.4.5.1
 chardet==3.0.4
 dateparser==0.7.4
 Django==3.0.6
+django-appconf==1.0.4
+django-classy-tags==1.0.0
+django-easy-maps==1.1.0
+geographiclib==1.50
+geopy==1.22.0
+gunicorn==20.0.4
 humanize==2.4.0
 idna==2.9
 loguru==0.4.1
@@ -11,6 +17,8 @@ maya==0.6.1
 numpy==1.18.4
 pandas==1.0.3
 pendulum==2.1.0
+pkg-resources==0.0.0
+py4j==0.10.7
 pyarrow==0.17.0
 pyspark==2.4.5
 python-dateutil==2.8.1
@@ -26,5 +34,4 @@ stravalib==0.10.2
 tzlocal==2.1
 units==0.7
 urllib3==1.25.9
-gunicorn==20.0.4
 whitenoise==5.1.0
