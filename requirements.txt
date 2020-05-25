@@ -17,7 +17,7 @@ maya==0.6.1
 numpy==1.18.4
 pandas==1.0.3
 pendulum==2.1.0
-pkg-resources==0.0.0
+pkg-resources
 py4j==0.10.7
 pyarrow==0.17.0
 pyspark==2.4.5
