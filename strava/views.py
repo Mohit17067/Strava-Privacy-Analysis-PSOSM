@@ -13,7 +13,12 @@ def home(request):
 	with open("strava/home_address/athlete_"+str(1),'rb') as f:
 		address = pickle.load(f)
 		print(address)
-	return render(request, 'strava/athlete_info.html', {'file_name':'strava/heatmap_data/Athelete_'+str(1)+'.html', 'id':1, 'address':address})
+	distance = None
+	with open("strava/templates/strava/avgDistance.txt","r") as f:
+		f = list(f)
+		distance = f[0].split("=>")[-1]
+
+	return render(request, 'strava/athlete_info.html', {'file_name':'strava/heatmap_data/Athelete_'+str(1)+'.html', 'id':1, 'address':address,'distance':round(float(distance.strip()),2)})
 
 def stravaAuthentication(request):
 	print('check')
