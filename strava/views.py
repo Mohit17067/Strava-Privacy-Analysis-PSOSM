@@ -41,13 +41,7 @@ def athlete_info(request, ath_id):
 	with open("strava/templates/strava/avgDistance.txt","r") as f:
 		distance = None
 		f = list(f)
-		if(ath_id<=5):
-			distance = f[ath_id-1].split("=>")[-1]
-			print(distance)
-
-		if(ath_id>=7):
-			distance = f[ath_id-2].split(">")[-1]
-			print(distance)
+		distance = f[ath_id-1].split("=>")[-1]
 		
 	return render(request, 'strava/athlete_info.html', {'file_name':'strava/heatmap_data/Athelete_'+str(ath_id)+'.html', 'id':ath_id,'address':address,'distance':round(float(distance.strip()),2)})
 

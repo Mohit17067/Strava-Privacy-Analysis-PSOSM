@@ -3,6 +3,7 @@ Avg. distance travelled by Athlete 2 => 27.756459307464034
 Avg. distance travelled by Athlete 3 => 26.788512473647923
 Avg. distance travelled by Athlete 4 => 28.9568386860385
 Avg. distance travelled by Athlete 5 => 27.754676199578952
+Avg. distance travelled by Athlete 5 => 29.739502857395739
 Avg. distance travelled by Athlete 7 => 27.31174524492305
 Avg. distance travelled by Athlete 8 => 25.526396558201913
 Avg. distance travelled by Athlete 9 => 25.18406801244919
